@@ -1,0 +1,220 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="vi">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>T\uc0\u7917  Vi Minh Nguy\u7879 t - Gi\u7843 i M\'e3 V\u7853 n M\u7879 nh B\u7857 ng AI</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">\
+    <style>\
+        body \{ font-family: 'Segoe UI', system-ui, sans-serif; \}\
+        .hero-bg \{ \
+            background: linear-gradient(135deg, #1e1b4b, #4b0082, #7b68ee); \
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        .moon \{\
+            animation: moonFly 12s ease-in-out infinite;\
+            filter: drop-shadow(0 0 40px #facc15);\
+        \}\
+        @keyframes moonFly \{\
+            0%   \{ transform: translateX(-80px) translateY(0) rotate(0deg); \}\
+            25%  \{ transform: translateX(30px) translateY(-40px) rotate(8deg); \}\
+            50%  \{ transform: translateX(120px) translateY(10px) rotate(0deg); \}\
+            75%  \{ transform: translateX(60px) translateY(-35px) rotate(-6deg); \}\
+            100% \{ transform: translateX(-80px) translateY(0) rotate(0deg); \}\
+        \}\
+        .star \{\
+            animation: twinkle 3s ease-in-out infinite;\
+            position: absolute;\
+            color: #fefce8;\
+            text-shadow: 0 0 10px #fefce8;\
+        \}\
+        @keyframes twinkle \{\
+            0%, 100% \{ opacity: 0.3; \}\
+            50% \{ opacity: 1; \}\
+        \}\
+    </style>\
+</head>\
+<body class="bg-gray-950 text-white">\
+\
+    <!-- HERO -->\
+    <section class="hero-bg py-20 min-h-screen flex items-center">\
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">\
+            <div id="stars" class="absolute inset-0 pointer-events-none"></div>\
+\
+            <div class="flex justify-center mb-8 relative">\
+                <i class="fas fa-moon text-[180px] md:text-[220px] moon text-yellow-300"></i>\
+            </div>\
+\
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">\
+                \'c1nh Tr\uc0\u259 ng Minh Nguy\u7879 t\
+            </h1>\
+            <p class="text-3xl md:text-4xl font-light mb-8">\
+                Gi\uc0\u7843 i m\'e3 v\u7853 n m\u7879 nh tr\u7885 n \u273 \u7901 i b\u7857 ng AI\
+            </p>\
+            <p class="max-w-2xl mx-auto text-xl mb-12 opacity-90">\
+                K\uc0\u7871 t h\u7907 p T\u7917  Vi \u272 \u7849 u S\u7889  c\u7893  truy\u7873 n + Tr\'ed tu\u7879  nh\'e2n t\u7841 o.<br>\
+                Nh\uc0\u7853 n l\'e1 s\u7889  mi\u7877 n ph\'ed ch\u7881  trong 30 gi\'e2y.\
+            </p>\
+\
+            <!-- FORM L\'c1 S\uc0\u7888  -->\
+            <div class="max-w-xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl p-8 shadow-2xl">\
+                <h2 class="text-2xl font-semibold mb-6">L\uc0\u7845 y l\'e1 s\u7889  mi\u7877 n ph\'ed ngay</h2>\
+                <form id="freeForm" class="grid grid-cols-2 gap-4">\
+                    <div>\
+                        <label class="block text-sm mb-2">Ng\'e0y sinh</label>\
+                        <input type="date" class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none" required>\
+                    </div>\
+                    <div>\
+                        <label class="block text-sm mb-2">Gi\uc0\u7901  sinh</label>\
+                        <select class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
+                            <option>00:00 - 00:59 (T\'fd)</option><option>01:00 - 02:59 (S\uc0\u7917 u)</option>\
+                            <option>03:00 - 04:59 (D\uc0\u7847 n)</option><option>05:00 - 06:59 (M\'e3o)</option>\
+                            <option>07:00 - 08:59 (Th\'ecn)</option><option>09:00 - 10:59 (T\uc0\u7925 )</option>\
+                            <option>11:00 - 12:59 (Ng\uc0\u7885 )</option><option>13:00 - 14:59 (M\'f9i)</option>\
+                            <option>15:00 - 16:59 (Th\'e2n)</option><option>17:00 - 18:59 (D\uc0\u7853 u)</option>\
+                            <option>19:00 - 20:59 (Tu\uc0\u7845 t)</option><option>21:00 - 22:59 (H\u7907 i)</option>\
+                            <option>23:00 - 23:59 (H\uc0\u7907 i)</option>\
+                        </select>\
+                    </div>\
+                    <div>\
+                        <label class="block text-sm mb-2">Gi\uc0\u7899 i t\'ednh</label>\
+                        <select class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
+                            <option>Nam</option>\
+                            <option>N\uc0\u7919 </option>\
+                        </select>\
+                    </div>\
+                    <div>\
+                        <label class="block text-sm mb-2">T\uc0\u7881 nh / Th\'e0nh ph\u7889 </label>\
+                        <input type="text" placeholder="V\'ed d\uc0\u7909 : H\'e0 N\u7897 i" class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
+                    </div>\
+                    <button type="button" onclick="getFreeHoroscope()" \
+                            class="col-span-2 mt-4 bg-yellow-300 hover:bg-yellow-200 transition text-black font-bold text-xl py-5 rounded-3xl flex items-center justify-center gap-3">\
+                        <i class="fas fa-sparkles"></i>\
+                        NH\uc0\u7852 N L\'c1 S\u7888  MI\u7876 N PH\'cd\
+                    </button>\
+                </form>\
+            </div>\
+            <p class="text-sm mt-6 opacity-70">Kh\'f4ng c\uc0\u7847 n thanh to\'e1n \'95 K\u7871 t qu\u7843  ch\'ednh x\'e1c 99%</p>\
+        </div>\
+    </section>\
+\
+    <!-- QUY TR\'ccNH -->\
+    <section class="py-16 bg-gray-900">\
+        <div class="max-w-6xl mx-auto px-6">\
+            <h2 class="text-4xl font-bold text-center mb-12">Ch\uc0\u7881  3 b\u432 \u7899 c \'96 Nh\u7853 n b\'e1o c\'e1o ngay</h2>\
+            <div class="grid md:grid-cols-3 gap-8">\
+                <div class="text-center">\
+                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">1\uc0\u65039 \u8419 </div>\
+                    <h3 class="text-xl font-semibold">Nh\uc0\u7853 p ng\'e0y gi\u7901  sinh</h3>\
+                    <p class="text-gray-400 mt-2">Ch\uc0\u7881  v\'e0i gi\'e2y, h\u7879  th\u7889 ng AI s\u7869  l\u7853 p l\'e1 s\u7889  ch\'ednh x\'e1c</p>\
+                </div>\
+                <div class="text-center">\
+                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">2\uc0\u65039 \u8419 </div>\
+                    <h3 class="text-xl font-semibold">AI ph\'e2n t\'edch + Chuy\'ean gia ki\uc0\u7875 m ch\u7913 ng</h3>\
+                    <p class="text-gray-400 mt-2">K\uc0\u7871 t h\u7907 p truy\u7873 n th\u7889 ng v\'e0 c\'f4ng ngh\u7879  hi\u7879 n \u273 \u7841 i</p>\
+                </div>\
+                <div class="text-center">\
+                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">3\uc0\u65039 \u8419 </div>\
+                    <h3 class="text-xl font-semibold">Nh\uc0\u7853 n b\'e1o c\'e1o chi ti\u7871 t</h3>\
+                    <p class="text-gray-400 mt-2">T\'ednh c\'e1ch \'95 S\uc0\u7921  nghi\u7879 p \'95 T\'ecnh duy\'ean \'95 T\'e0i l\u7897 c</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- G\'d3I D\uc0\u7882 CH V\u7908  -->\
+    <section class="py-16 bg-gradient-to-b from-gray-900 to-purple-950">\
+        <div class="max-w-6xl mx-auto px-6">\
+            <h2 class="text-4xl font-bold text-center mb-4">Ch\uc0\u7885 n g\'f3i b\'e1o c\'e1o ph\'f9 h\u7907 p</h2>\
+            <p class="text-center text-xl mb-12">B\uc0\u7855 t \u273 \u7847 u mi\u7877 n ph\'ed \'96 N\'e2ng c\u7845 p khi c\u7847 n s\'e2u h\u417 n</p>\
+            \
+            <div class="grid md:grid-cols-3 gap-8">\
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition">\
+                    <h3 class="text-2xl font-bold">C\uc0\u417  b\u7843 n</h3>\
+                    <div class="text-5xl font-bold mt-4">89.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
+                    <p class="text-green-400 mt-2">Gi\uc0\u7843 m 40% so v\u7899 i gi\'e1 g\u7889 c</p>\
+                    <ul class="mt-8 space-y-4 text-sm">\
+                        <li>\uc0\u9989  3 ph\u7847 n ph\'e2n t\'edch ch\'ednh</li>\
+                        <li>\uc0\u9989  T\u432 \u417 ng lai g\u7847 n (3-6 th\'e1ng)</li>\
+                        <li>\uc0\u9989  1 c\'e2u h\u7887 i AI</li>\
+                        <li>\uc0\u9989  Nh\u7853 n ngay trong 60 gi\'e2y</li>\
+                    </ul>\
+                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i C\u417  b\u7843 n</button>\
+                </div>\
+\
+                <div class="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-3xl p-8 scale-110 shadow-2xl relative">\
+                    <div class="absolute -top-3 right-6 bg-yellow-300 text-black text-xs font-bold px-6 py-1 rounded-full">B\'c1N CH\uc0\u7840 Y NH\u7844 T</div>\
+                    <h3 class="text-3xl font-bold">Ti\'eau chu\uc0\u7849 n</h3>\
+                    <div class="text-5xl font-bold mt-4">149.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
+                    <ul class="mt-8 space-y-4 text-sm">\
+                        <li>\uc0\u9989  20 trang chi ti\u7871 t</li>\
+                        <li>\uc0\u9989  To\'e0n b\u7897  cung m\u7879 nh + \u273 \u7841 i v\u7853 n</li>\
+                        <li>\uc0\u9989  S\u7921  nghi\u7879 p \'95 T\'e0i l\u7897 c \'95 T\'ecnh duy\'ean</li>\
+                        <li>\uc0\u9989  2 c\'e2u h\u7887 i AI c\'e1 nh\'e2n h\'f3a</li>\
+                    </ul>\
+                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-purple-700 font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i Ti\'eau chu\u7849 n</button>\
+                </div>\
+\
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition">\
+                    <h3 class="text-2xl font-bold">Cao c\uc0\u7845 p</h3>\
+                    <div class="text-5xl font-bold mt-4">279.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
+                    <ul class="mt-8 space-y-4 text-sm">\
+                        <li>\uc0\u9989  35+ trang \u273 \u7847 y \u273 \u7911 </li>\
+                        <li>\uc0\u9989  B\'e1t T\u7921  + \u272 \u7841 i v\u7853 n 10 n\u259 m</li>\
+                        <li>\uc0\u9989  Phong th\u7911 y c\'e1 nh\'e2n</li>\
+                        <li>\uc0\u9989  3 c\'e2u h\u7887 i AI + t\u432  v\u7845 n chuy\'ean gia</li>\
+                    </ul>\
+                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i Cao c\u7845 p</button>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- TESTIMONIALS -->\
+    <section class="py-16 bg-gray-900">\
+        <div class="max-w-6xl mx-auto px-6">\
+            <h2 class="text-4xl font-bold text-center mb-12">H\'e0ng ng\'e0n ng\uc0\u432 \u7901 i \u273 \'e3 tin t\u432 \u7903 ng</h2>\
+            <div class="grid md:grid-cols-3 gap-8">\
+                <div class="bg-white/5 p-6 rounded-3xl">"L\'e1 s\uc0\u7889  c\u7921 c k\u7923  ch\'ednh x\'e1c, \u273 \u7863 c bi\u7879 t ph\u7847 n s\u7921  nghi\u7879 p gi\'fap m\'ecnh thay \u273 \u7893 i quy\u7871 t \u273 \u7883 nh \u273 \'fang \u273 \u7855 n!"<br><span class="text-yellow-300 text-sm mt-4 block">- Ch\u7883  Lan, H\'e0 N\u7897 i (12/2025)</span></div>\
+                <div class="bg-white/5 p-6 rounded-3xl">"Giao di\uc0\u7879 n \u273 \u7865 p, n\u7897 i dung s\'e2u s\u7855 c. M\'ecnh mua cho c\u7843  gia \u273 \'ecnh lu\'f4n!"<br><span class="text-yellow-300 text-sm mt-4 block">- Anh Minh, TP.HCM (11/2025)</span></div>\
+                <div class="bg-white/5 p-6 rounded-3xl">"Ph\uc0\u7847 n phong th\u7911 y c\'e1 nh\'e2n r\u7845 t hay, m\'ecnh \u273 \'e3 ch\u7881 nh l\u7841 i h\u432 \u7899 ng nh\'e0 theo g\u7907 i \'fd."<br><span class="text-yellow-300 text-sm mt-4 block">- Ch\u7883  H\u432 \u417 ng, \u272 \'e0 N\u7861 ng (10/2025)</span></div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <footer class="bg-black py-12 text-center text-gray-400">\
+        <p>\'a9 2026 T\uc0\u7917  Vi Minh Nguy\u7879 t \'95 Gi\u7843 i m\'e3 v\u7853 n m\u7879 nh b\u7857 ng AI</p>\
+        <p class="text-sm mt-2">Li\'ean h\uc0\u7879 : tuviminnguyet@gmail.com | Hotline: 0987 654 321</p>\
+    </footer>\
+\
+    <script>\
+        function createStars() \{\
+            const container = document.getElementById('stars');\
+            for (let i = 0; i < 80; i++) \{\
+                const star = document.createElement('i');\
+                star.className = 'fas fa-star star';\
+                const size = Math.random() * 6 + 3;\
+                star.style.fontSize = `$\{size\}px`;\
+                star.style.left = `$\{Math.random() * 100\}%`;\
+                star.style.top = `$\{Math.random() * 80\}%`;\
+                star.style.animationDelay = `-$\{Math.random() * 3\}s`;\
+                container.appendChild(star);\
+            \}\
+        \}\
+        window.onload = createStars;\
+\
+        function getFreeHoroscope() \{\
+            alert("\uc0\u55356 \u57225  C\u7843 m \u417 n b\u7841 n! L\'e1 s\u7889  mi\u7877 n ph\'ed \u273 ang \u273 \u432 \u7907 c t\u7841 o...\\n\\n(Prototype: Trong b\u7843 n th\u7853 t s\u7869  g\u7917 i PDF qua email)");\
+        \}\
+    </script>\
+</body>\
+</html>}
