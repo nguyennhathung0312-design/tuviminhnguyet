@@ -1,220 +1,1238 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tử Vi Sao Mai — Luận số trọn đời</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Be+Vietnam+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1208;
+  --ink-soft: #3d2e1a;
+  --ink-muted: #7a6a52;
+  --gold: #b8943f;
+  --gold-light: #d4ad5c;
+  --gold-pale: #f5ead6;
+  --cream: #faf6ef;
+  --cream-dark: #f0e9da;
+  --red-deep: #8b2020;
+  --border: rgba(184,148,63,0.25);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Be Vietnam Pro', sans-serif;
+}
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="vi">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>T\uc0\u7917  Vi Minh Nguy\u7879 t - Gi\u7843 i M\'e3 V\u7853 n M\u7879 nh B\u7857 ng AI</title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">\
-    <style>\
-        body \{ font-family: 'Segoe UI', system-ui, sans-serif; \}\
-        .hero-bg \{ \
-            background: linear-gradient(135deg, #1e1b4b, #4b0082, #7b68ee); \
-            position: relative;\
-            overflow: hidden;\
-        \}\
-        .moon \{\
-            animation: moonFly 12s ease-in-out infinite;\
-            filter: drop-shadow(0 0 40px #facc15);\
-        \}\
-        @keyframes moonFly \{\
-            0%   \{ transform: translateX(-80px) translateY(0) rotate(0deg); \}\
-            25%  \{ transform: translateX(30px) translateY(-40px) rotate(8deg); \}\
-            50%  \{ transform: translateX(120px) translateY(10px) rotate(0deg); \}\
-            75%  \{ transform: translateX(60px) translateY(-35px) rotate(-6deg); \}\
-            100% \{ transform: translateX(-80px) translateY(0) rotate(0deg); \}\
-        \}\
-        .star \{\
-            animation: twinkle 3s ease-in-out infinite;\
-            position: absolute;\
-            color: #fefce8;\
-            text-shadow: 0 0 10px #fefce8;\
-        \}\
-        @keyframes twinkle \{\
-            0%, 100% \{ opacity: 0.3; \}\
-            50% \{ opacity: 1; \}\
-        \}\
-    </style>\
-</head>\
-<body class="bg-gray-950 text-white">\
-\
-    <!-- HERO -->\
-    <section class="hero-bg py-20 min-h-screen flex items-center">\
-        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">\
-            <div id="stars" class="absolute inset-0 pointer-events-none"></div>\
-\
-            <div class="flex justify-center mb-8 relative">\
-                <i class="fas fa-moon text-[180px] md:text-[220px] moon text-yellow-300"></i>\
-            </div>\
-\
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">\
-                \'c1nh Tr\uc0\u259 ng Minh Nguy\u7879 t\
-            </h1>\
-            <p class="text-3xl md:text-4xl font-light mb-8">\
-                Gi\uc0\u7843 i m\'e3 v\u7853 n m\u7879 nh tr\u7885 n \u273 \u7901 i b\u7857 ng AI\
-            </p>\
-            <p class="max-w-2xl mx-auto text-xl mb-12 opacity-90">\
-                K\uc0\u7871 t h\u7907 p T\u7917  Vi \u272 \u7849 u S\u7889  c\u7893  truy\u7873 n + Tr\'ed tu\u7879  nh\'e2n t\u7841 o.<br>\
-                Nh\uc0\u7853 n l\'e1 s\u7889  mi\u7877 n ph\'ed ch\u7881  trong 30 gi\'e2y.\
-            </p>\
-\
-            <!-- FORM L\'c1 S\uc0\u7888  -->\
-            <div class="max-w-xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl p-8 shadow-2xl">\
-                <h2 class="text-2xl font-semibold mb-6">L\uc0\u7845 y l\'e1 s\u7889  mi\u7877 n ph\'ed ngay</h2>\
-                <form id="freeForm" class="grid grid-cols-2 gap-4">\
-                    <div>\
-                        <label class="block text-sm mb-2">Ng\'e0y sinh</label>\
-                        <input type="date" class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none" required>\
-                    </div>\
-                    <div>\
-                        <label class="block text-sm mb-2">Gi\uc0\u7901  sinh</label>\
-                        <select class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
-                            <option>00:00 - 00:59 (T\'fd)</option><option>01:00 - 02:59 (S\uc0\u7917 u)</option>\
-                            <option>03:00 - 04:59 (D\uc0\u7847 n)</option><option>05:00 - 06:59 (M\'e3o)</option>\
-                            <option>07:00 - 08:59 (Th\'ecn)</option><option>09:00 - 10:59 (T\uc0\u7925 )</option>\
-                            <option>11:00 - 12:59 (Ng\uc0\u7885 )</option><option>13:00 - 14:59 (M\'f9i)</option>\
-                            <option>15:00 - 16:59 (Th\'e2n)</option><option>17:00 - 18:59 (D\uc0\u7853 u)</option>\
-                            <option>19:00 - 20:59 (Tu\uc0\u7845 t)</option><option>21:00 - 22:59 (H\u7907 i)</option>\
-                            <option>23:00 - 23:59 (H\uc0\u7907 i)</option>\
-                        </select>\
-                    </div>\
-                    <div>\
-                        <label class="block text-sm mb-2">Gi\uc0\u7899 i t\'ednh</label>\
-                        <select class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
-                            <option>Nam</option>\
-                            <option>N\uc0\u7919 </option>\
-                        </select>\
-                    </div>\
-                    <div>\
-                        <label class="block text-sm mb-2">T\uc0\u7881 nh / Th\'e0nh ph\u7889 </label>\
-                        <input type="text" placeholder="V\'ed d\uc0\u7909 : H\'e0 N\u7897 i" class="w-full px-4 py-3 rounded-2xl bg-white/20 border border-white/30 focus:outline-none">\
-                    </div>\
-                    <button type="button" onclick="getFreeHoroscope()" \
-                            class="col-span-2 mt-4 bg-yellow-300 hover:bg-yellow-200 transition text-black font-bold text-xl py-5 rounded-3xl flex items-center justify-center gap-3">\
-                        <i class="fas fa-sparkles"></i>\
-                        NH\uc0\u7852 N L\'c1 S\u7888  MI\u7876 N PH\'cd\
-                    </button>\
-                </form>\
-            </div>\
-            <p class="text-sm mt-6 opacity-70">Kh\'f4ng c\uc0\u7847 n thanh to\'e1n \'95 K\u7871 t qu\u7843  ch\'ednh x\'e1c 99%</p>\
-        </div>\
-    </section>\
-\
-    <!-- QUY TR\'ccNH -->\
-    <section class="py-16 bg-gray-900">\
-        <div class="max-w-6xl mx-auto px-6">\
-            <h2 class="text-4xl font-bold text-center mb-12">Ch\uc0\u7881  3 b\u432 \u7899 c \'96 Nh\u7853 n b\'e1o c\'e1o ngay</h2>\
-            <div class="grid md:grid-cols-3 gap-8">\
-                <div class="text-center">\
-                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">1\uc0\u65039 \u8419 </div>\
-                    <h3 class="text-xl font-semibold">Nh\uc0\u7853 p ng\'e0y gi\u7901  sinh</h3>\
-                    <p class="text-gray-400 mt-2">Ch\uc0\u7881  v\'e0i gi\'e2y, h\u7879  th\u7889 ng AI s\u7869  l\u7853 p l\'e1 s\u7889  ch\'ednh x\'e1c</p>\
-                </div>\
-                <div class="text-center">\
-                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">2\uc0\u65039 \u8419 </div>\
-                    <h3 class="text-xl font-semibold">AI ph\'e2n t\'edch + Chuy\'ean gia ki\uc0\u7875 m ch\u7913 ng</h3>\
-                    <p class="text-gray-400 mt-2">K\uc0\u7871 t h\u7907 p truy\u7873 n th\u7889 ng v\'e0 c\'f4ng ngh\u7879  hi\u7879 n \u273 \u7841 i</p>\
-                </div>\
-                <div class="text-center">\
-                    <div class="w-16 h-16 mx-auto bg-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-4">3\uc0\u65039 \u8419 </div>\
-                    <h3 class="text-xl font-semibold">Nh\uc0\u7853 n b\'e1o c\'e1o chi ti\u7871 t</h3>\
-                    <p class="text-gray-400 mt-2">T\'ednh c\'e1ch \'95 S\uc0\u7921  nghi\u7879 p \'95 T\'ecnh duy\'ean \'95 T\'e0i l\u7897 c</p>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- G\'d3I D\uc0\u7882 CH V\u7908  -->\
-    <section class="py-16 bg-gradient-to-b from-gray-900 to-purple-950">\
-        <div class="max-w-6xl mx-auto px-6">\
-            <h2 class="text-4xl font-bold text-center mb-4">Ch\uc0\u7885 n g\'f3i b\'e1o c\'e1o ph\'f9 h\u7907 p</h2>\
-            <p class="text-center text-xl mb-12">B\uc0\u7855 t \u273 \u7847 u mi\u7877 n ph\'ed \'96 N\'e2ng c\u7845 p khi c\u7847 n s\'e2u h\u417 n</p>\
-            \
-            <div class="grid md:grid-cols-3 gap-8">\
-                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition">\
-                    <h3 class="text-2xl font-bold">C\uc0\u417  b\u7843 n</h3>\
-                    <div class="text-5xl font-bold mt-4">89.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
-                    <p class="text-green-400 mt-2">Gi\uc0\u7843 m 40% so v\u7899 i gi\'e1 g\u7889 c</p>\
-                    <ul class="mt-8 space-y-4 text-sm">\
-                        <li>\uc0\u9989  3 ph\u7847 n ph\'e2n t\'edch ch\'ednh</li>\
-                        <li>\uc0\u9989  T\u432 \u417 ng lai g\u7847 n (3-6 th\'e1ng)</li>\
-                        <li>\uc0\u9989  1 c\'e2u h\u7887 i AI</li>\
-                        <li>\uc0\u9989  Nh\u7853 n ngay trong 60 gi\'e2y</li>\
-                    </ul>\
-                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i C\u417  b\u7843 n</button>\
-                </div>\
-\
-                <div class="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-3xl p-8 scale-110 shadow-2xl relative">\
-                    <div class="absolute -top-3 right-6 bg-yellow-300 text-black text-xs font-bold px-6 py-1 rounded-full">B\'c1N CH\uc0\u7840 Y NH\u7844 T</div>\
-                    <h3 class="text-3xl font-bold">Ti\'eau chu\uc0\u7849 n</h3>\
-                    <div class="text-5xl font-bold mt-4">149.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
-                    <ul class="mt-8 space-y-4 text-sm">\
-                        <li>\uc0\u9989  20 trang chi ti\u7871 t</li>\
-                        <li>\uc0\u9989  To\'e0n b\u7897  cung m\u7879 nh + \u273 \u7841 i v\u7853 n</li>\
-                        <li>\uc0\u9989  S\u7921  nghi\u7879 p \'95 T\'e0i l\u7897 c \'95 T\'ecnh duy\'ean</li>\
-                        <li>\uc0\u9989  2 c\'e2u h\u7887 i AI c\'e1 nh\'e2n h\'f3a</li>\
-                    </ul>\
-                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-purple-700 font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i Ti\'eau chu\u7849 n</button>\
-                </div>\
-\
-                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition">\
-                    <h3 class="text-2xl font-bold">Cao c\uc0\u7845 p</h3>\
-                    <div class="text-5xl font-bold mt-4">279.000 <span class="text-sm font-normal">\uc0\u273 </span></div>\
-                    <ul class="mt-8 space-y-4 text-sm">\
-                        <li>\uc0\u9989  35+ trang \u273 \u7847 y \u273 \u7911 </li>\
-                        <li>\uc0\u9989  B\'e1t T\u7921  + \u272 \u7841 i v\u7853 n 10 n\u259 m</li>\
-                        <li>\uc0\u9989  Phong th\u7911 y c\'e1 nh\'e2n</li>\
-                        <li>\uc0\u9989  3 c\'e2u h\u7887 i AI + t\u432  v\u7845 n chuy\'ean gia</li>\
-                    </ul>\
-                    <button onclick="alert('\uc0\u272 ang chuy\u7875 n \u273 \u7871 n trang thanh to\'e1n... (prototype)')" class="mt-10 w-full py-4 bg-white text-black font-bold rounded-2xl hover:bg-yellow-300">Ch\u7885 n g\'f3i Cao c\u7845 p</button>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- TESTIMONIALS -->\
-    <section class="py-16 bg-gray-900">\
-        <div class="max-w-6xl mx-auto px-6">\
-            <h2 class="text-4xl font-bold text-center mb-12">H\'e0ng ng\'e0n ng\uc0\u432 \u7901 i \u273 \'e3 tin t\u432 \u7903 ng</h2>\
-            <div class="grid md:grid-cols-3 gap-8">\
-                <div class="bg-white/5 p-6 rounded-3xl">"L\'e1 s\uc0\u7889  c\u7921 c k\u7923  ch\'ednh x\'e1c, \u273 \u7863 c bi\u7879 t ph\u7847 n s\u7921  nghi\u7879 p gi\'fap m\'ecnh thay \u273 \u7893 i quy\u7871 t \u273 \u7883 nh \u273 \'fang \u273 \u7855 n!"<br><span class="text-yellow-300 text-sm mt-4 block">- Ch\u7883  Lan, H\'e0 N\u7897 i (12/2025)</span></div>\
-                <div class="bg-white/5 p-6 rounded-3xl">"Giao di\uc0\u7879 n \u273 \u7865 p, n\u7897 i dung s\'e2u s\u7855 c. M\'ecnh mua cho c\u7843  gia \u273 \'ecnh lu\'f4n!"<br><span class="text-yellow-300 text-sm mt-4 block">- Anh Minh, TP.HCM (11/2025)</span></div>\
-                <div class="bg-white/5 p-6 rounded-3xl">"Ph\uc0\u7847 n phong th\u7911 y c\'e1 nh\'e2n r\u7845 t hay, m\'ecnh \u273 \'e3 ch\u7881 nh l\u7841 i h\u432 \u7899 ng nh\'e0 theo g\u7907 i \'fd."<br><span class="text-yellow-300 text-sm mt-4 block">- Ch\u7883  H\u432 \u417 ng, \u272 \'e0 N\u7861 ng (10/2025)</span></div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <footer class="bg-black py-12 text-center text-gray-400">\
-        <p>\'a9 2026 T\uc0\u7917  Vi Minh Nguy\u7879 t \'95 Gi\u7843 i m\'e3 v\u7853 n m\u7879 nh b\u7857 ng AI</p>\
-        <p class="text-sm mt-2">Li\'ean h\uc0\u7879 : tuviminnguyet@gmail.com | Hotline: 0987 654 321</p>\
-    </footer>\
-\
-    <script>\
-        function createStars() \{\
-            const container = document.getElementById('stars');\
-            for (let i = 0; i < 80; i++) \{\
-                const star = document.createElement('i');\
-                star.className = 'fas fa-star star';\
-                const size = Math.random() * 6 + 3;\
-                star.style.fontSize = `$\{size\}px`;\
-                star.style.left = `$\{Math.random() * 100\}%`;\
-                star.style.top = `$\{Math.random() * 80\}%`;\
-                star.style.animationDelay = `-$\{Math.random() * 3\}s`;\
-                container.appendChild(star);\
-            \}\
-        \}\
-        window.onload = createStars;\
-\
-        function getFreeHoroscope() \{\
-            alert("\uc0\u55356 \u57225  C\u7843 m \u417 n b\u7841 n! L\'e1 s\u7889  mi\u7877 n ph\'ed \u273 ang \u273 \u432 \u7907 c t\u7841 o...\\n\\n(Prototype: Trong b\u7843 n th\u7853 t s\u7869  g\u7917 i PDF qua email)");\
-        \}\
-    </script>\
-</body>\
-</html>}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ── PATTERN OVERLAY ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(184,148,63,0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139,32,32,0.03) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+  background: rgba(250,246,239,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-muted);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cream);
+  background: var(--ink);
+  padding: 0.55rem 1.4rem;
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover { background: var(--gold); }
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.hero-eyebrow::before,
+.hero-eyebrow::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: var(--ink-muted);
+  margin-bottom: 2.5rem;
+  max-width: 560px;
+}
+
+.hero-body {
+  max-width: 520px;
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover { background: var(--gold); }
+
+.btn-secondary {
+  font-size: 13px;
+  color: var(--ink-muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  transition: color 0.2s;
+}
+
+.btn-secondary:hover { color: var(--gold); }
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 3rem;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollDown 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% { opacity: 0; transform: scaleY(0); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
+}
+
+/* ── DIVIDER ── */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.divider-symbol {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+/* ── SECTION BASE ── */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 7rem 2rem;
+}
+
+.section-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.section-body {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  max-width: 600px;
+}
+
+/* ── INTRO — LỜI THẦY ── */
+.intro-section {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 7rem 2rem;
+}
+
+.intro-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-quote {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--gold-light);
+  margin-bottom: 2rem;
+}
+
+.intro-quote::before { content: '\201C'; }
+.intro-quote::after { content: '\201D'; }
+
+.intro-body {
+  font-size: 15px;
+  color: rgba(250,246,239,0.7);
+  line-height: 1.9;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+.intro-sig {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+/* ── WHY ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2px;
+  margin-top: 4rem;
+  border: 1px solid var(--border);
+}
+
+.why-item {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  transition: background 0.2s;
+}
+
+.why-item:hover { background: var(--gold-pale); }
+
+.why-num {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.why-title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.why-body {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.8;
+}
+
+/* ── HOW IT WORKS ── */
+.how-section {
+  background: var(--cream-dark);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: var(--border);
+}
+
+.step-item {
+  position: relative;
+  text-align: center;
+}
+
+.step-num {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--gold);
+  background: var(--cream-dark);
+  position: relative;
+  z-index: 1;
+}
+
+.step-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.step-body {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.75;
+}
+
+/* ── WHAT YOU GET ── */
+.topics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.topic-card {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  background: var(--cream);
+  transition: background 0.2s;
+}
+
+.topic-card:hover { background: var(--gold-pale); }
+
+.topic-icon {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
+}
+
+.topic-title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.topic-body {
+  font-size: 13px;
+  color: var(--ink-muted);
+  line-height: 1.8;
+}
+
+/* ── PRICING ── */
+.pricing-section { background: var(--ink); }
+
+.pricing-section .section-title { color: var(--cream); }
+.pricing-section .section-body { color: rgba(250,246,239,0.6); }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+  align-items: start;
+}
+
+.price-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(184,148,63,0.2);
+  background: rgba(255,255,255,0.03);
+  position: relative;
+  transition: border-color 0.2s;
+}
+
+.price-card:hover { border-color: rgba(184,148,63,0.5); }
+
+.price-card.featured {
+  border-color: var(--gold);
+  background: rgba(184,148,63,0.07);
+}
+
+.price-badge {
+  position: absolute;
+  top: -1px;
+  left: 2rem;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--gold);
+  padding: 4px 12px;
+}
+
+.price-name {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.25rem;
+}
+
+.price-desc {
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-old {
+  font-size: 14px;
+  color: rgba(250,246,239,0.3);
+  text-decoration: line-through;
+}
+
+.price-new {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--gold-light);
+}
+
+.price-note {
+  font-size: 12px;
+  color: rgba(250,246,239,0.4);
+  margin-bottom: 2rem;
+}
+
+.price-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.price-list li {
+  font-size: 13px;
+  color: rgba(250,246,239,0.7);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.price-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  font-size: 8px;
+  color: var(--gold);
+  top: 5px;
+}
+
+.price-btn {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgba(184,148,63,0.4);
+  color: var(--gold-light);
+  transition: all 0.2s;
+}
+
+.price-btn:hover, .price-card.featured .price-btn {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials-section { background: var(--cream-dark); }
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.testimonial-card {
+  padding: 2rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '\201C';
+  font-family: var(--serif);
+  font-size: 5rem;
+  color: var(--gold);
+  opacity: 0.15;
+  position: absolute;
+  top: 0.5rem;
+  left: 1.25rem;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gold-pale);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  color: var(--gold);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.author-meta {
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+/* ── FAQ ── */
+.faq-list {
+  margin-top: 3.5rem;
+  max-width: 680px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 0;
+}
+
+.faq-q {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.faq-icon {
+  color: var(--gold);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-a {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.85;
+}
+
+/* ── CTA FINAL ── */
+.cta-section {
+  background: var(--gold-pale);
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.cta-section .section-title {
+  max-width: 600px;
+  margin: 0 auto 1.25rem;
+}
+
+.cta-section .section-body {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+.cta-note {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 1.25rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: rgba(250,246,239,0.5);
+  padding: 4rem 2rem;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-brand {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand span { color: var(--gold); }
+
+.footer-tagline {
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: rgba(250,246,239,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+.footer-bottom {
+  max-width: 1080px;
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(184,148,63,0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-disclaimer {
+  font-size: 11px;
+  font-style: italic;
+  opacity: 0.5;
+  max-width: 500px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero > * {
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero > *:nth-child(1) { animation-delay: 0.1s; }
+.hero > *:nth-child(2) { animation-delay: 0.25s; }
+.hero > *:nth-child(3) { animation-delay: 0.4s; }
+.hero > *:nth-child(4) { animation-delay: 0.5s; }
+.hero > *:nth-child(5) { animation-delay: 0.6s; }
+.hero > *:nth-child(6) { animation-delay: 0.75s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .topics-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .steps::before { display: none; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Tử Vi <span>Sao Mai</span></div>
+  <ul class="nav-links">
+    <li><a href="#gioi-thieu">Về chúng tôi</a></li>
+    <li><a href="#what-you-get">Bạn nhận được gì</a></li>
+    <li><a href="#bang-gia">Bảng giá</a></li>
+    <li><a href="#faq">Hỏi đáp</a></li>
+  </ul>
+  <a href="#lap-la-so" class="nav-cta">Lập lá số</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-eyebrow">Tử Vi Đẩu Số — Truyền thống Đông phương</div>
+  <h1>Lá số của bạn<br>đã nói <em>điều gì</em>?</h1>
+  <p class="hero-sub">Không phải đoán. Là luận — từ ngày giờ sinh, từ vị trí của sao, từ nhịp của vận.</p>
+  <p class="hero-body">Tử Vi không phán số phận. Nó cho bạn biết bạn đang đứng ở đâu, giai đoạn này cần gì, và năng lực nào chưa được dùng đúng chỗ.</p>
+  <div class="hero-actions">
+    <a href="#lap-la-so" class="btn-primary">Lập lá số miễn phí</a>
+    <a href="#gioi-thieu" class="btn-secondary">Tìm hiểu thêm</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- LỜI THẦY — INTRO -->
+<section class="intro-section" id="gioi-thieu">
+  <div class="intro-inner">
+    <p class="intro-quote">Tử vi không nói bạn là ai. Nó nói bạn đang là ai — trong giai đoạn này.</p>
+    <p class="intro-body">Hơn hai mươi năm ngồi với hàng ngàn lá số, tôi nhận ra một điều: người ta không cần người thầy nói suôn sẻ. Họ cần ai đó nói thật, nói đúng, và nói đúng lúc. Tử Vi Sao Mai được lập ra với tinh thần đó — không hứa hẹn, không đánh bóng, chỉ luận.</p>
+    <p class="intro-sig">— Người sáng lập, Tử Vi Sao Mai</p>
+  </div>
+</section>
+
+<div style="padding: 3rem 0; background: var(--cream-dark); z-index:1; position:relative;">
+  <div class="divider"><span class="divider-symbol">✦</span></div>
+</div>
+
+<!-- WHY -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label">Vì sao chọn Sao Mai</div>
+    <h2 class="section-title">Luận số cần <em>người thật</em>,<br>không chỉ phần mềm</h2>
+    <p class="section-body">Lá số là khung xương. Người luận giải mới là linh hồn. Chúng tôi kết hợp nền tảng Tử Vi Đẩu Số truyền thống với hiểu biết tâm lý con người — để mỗi buổi xem số là một cuộc trò chuyện thật.</p>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <div class="why-title">Luận theo người, không theo sách</div>
+        <p class="why-body">Cùng một sao, ở hai người khác nhau biểu hiện hoàn toàn khác. Chúng tôi không đọc mẫu — chúng tôi đọc người đang ngồi trước mặt.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <div class="why-title">Nói thẳng, không vòng vo</div>
+        <p class="why-body">Giai đoạn khó là giai đoạn khó. Cần chuẩn bị gì thì nói rõ cần chuẩn bị gì. Không nói hoa mỹ để khách an tâm mà thực ra không biết gì.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <div class="why-title">Tập trung vào điều bạn thật sự cần</div>
+        <p class="why-body">Không kéo dài bằng những đoạn chung chung. Mỗi lá số chỉ có vài điểm thật sự quan trọng — chúng tôi tìm đúng điểm đó.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <div class="why-title">Hệ thống Tử Vi Đẩu Số thuần chính thống</div>
+        <p class="why-body">Nền tảng 12 cung, 14 chính tinh, Tứ Hóa — được giữ nguyên vẹn, không pha trộn để cho dễ nghe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="section-inner">
+    <div class="section-label">Quy trình</div>
+    <h2 class="section-title">Từ ngày giờ sinh<br>đến <em>bức tranh vận mệnh</em></h2>
+    <p class="section-body">Ba bước. Không phức tạp, không kéo dài. Bạn cung cấp dữ liệu, lá số được lập, luận giải đi vào đúng vấn đề bạn cần.</p>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">一</div>
+        <div class="step-title">Nhập ngày giờ sinh</div>
+        <p class="step-body">Năm, tháng, ngày, giờ — đây là bốn trụ nền tảng. Giờ sinh càng chính xác, lá số càng sát thực tế.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">二</div>
+        <div class="step-title">Lá số được lập và phân tích</div>
+        <p class="step-body">12 cung được xác định. Sao vào đúng vị trí. Tứ Hóa xác lập chiều vận của giai đoạn bạn đang sống.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">三</div>
+        <div class="step-title">Nhận luận giải cá nhân</div>
+        <p class="step-body">Không phải đoán chung chung. Luận giải đi thẳng vào tính cách, vận hạn, và những điều cần chú ý trong giai đoạn hiện tại.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">四</div>
+        <div class="step-title">Chọn chiều sâu phù hợp</div>
+        <p class="step-body">Xem tổng quan miễn phí trước. Khi cần đi sâu hơn vào sự nghiệp, tài lộc, hôn nhân — chọn báo cáo phù hợp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section id="what-you-get">
+  <div class="section-inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;">
+    <div>
+      <div class="section-label">Bạn nhận được gì</div>
+      <h2 class="section-title">Bốn lĩnh vực<br><em>quan trọng nhất</em></h2>
+      <p class="section-body">Mỗi người đến với lá số vì một lý do khác nhau. Nhưng hầu hết đều xoay quanh bốn vùng này — và đó cũng là bốn vùng lá số nói rõ nhất.</p>
+      <div style="margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--border); border-left: 3px solid var(--gold);">
+        <p style="font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: 1rem; line-height: 1.8;">Lá số không thay bạn quyết định. Nó giúp bạn quyết định từ chỗ hiểu mình — không phải từ chỗ lo sợ.</p>
+      </div>
+    </div>
+    <div class="topics-grid" style="margin-top: 0;">
+      <div class="topic-card">
+        <div class="topic-icon">命</div>
+        <div class="topic-title">Bản mệnh & khí chất</div>
+        <p class="topic-body">Điểm mạnh thật sự của bạn là gì. Phản ứng tự nhiên của bạn khi gặp áp lực. Và điều bạn chưa dùng đúng chỗ.</p>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">官</div>
+        <div class="topic-title">Sự nghiệp & công danh</div>
+        <p class="topic-body">Môi trường nào phù hợp với lá số. Giai đoạn nào cần kiên nhẫn. Giai đoạn nào nên đẩy mạnh.</p>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">財</div>
+        <div class="topic-title">Tài lộc & tích lũy</div>
+        <p class="topic-body">Tiền đến và đi theo cách nào trong lá số của bạn. Quyết định tài chính nào cần thận trọng hơn bình thường.</p>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon">夫</div>
+        <div class="topic-title">Tình cảm & gia đạo</div>
+        <p class="topic-body">Cách bạn kết nối với người thân. Những gì bạn cần từ mối quan hệ — và điều hay tạo ra xung đột không cần thiết.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="bang-gia">
+  <div class="section-inner">
+    <div class="section-label" style="color: var(--gold);">Báo cáo chi tiết</div>
+    <h2 class="section-title">Chọn độ sâu<br><em>phù hợp với bạn</em></h2>
+    <p class="section-body">Bắt đầu miễn phí. Khi cần thêm chiều sâu — sự nghiệp, tài lộc, hôn nhân, hay cả hai hệ thống Tử Vi và Bát Tự — mới cần nâng cấp.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-name">Cơ bản</div>
+        <div class="price-desc">Nhận kết quả ngay</div>
+        <div class="price-amount">
+          <span class="price-old">149.000đ</span>
+          <span class="price-new">89.000đ</span>
+        </div>
+        <div class="price-note">3 phần phân tích chính</div>
+        <ul class="price-list">
+          <li>Điểm đặc biệt riêng của lá số bạn</li>
+          <li>Vận hạn 3–6 tháng tới: việc làm, tiền bạc, tình cảm, sức khỏe</li>
+          <li>Lưu niên 2 năm theo từng năm</li>
+          <li>1 câu hỏi thêm theo lá số</li>
+        </ul>
+        <a href="#lap-la-so" class="price-btn">Chọn gói này</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">Phổ biến nhất</div>
+        <div class="price-name">Tiêu chuẩn</div>
+        <div class="price-desc">Tử Vi Đẩu Số đầy đủ</div>
+        <div class="price-amount">
+          <span class="price-old">299.000đ</span>
+          <span class="price-new">149.000đ</span>
+        </div>
+        <div class="price-note">20 trang báo cáo</div>
+        <ul class="price-list">
+          <li>Tất cả phần Gói Cơ bản</li>
+          <li>Tổng quan bản mệnh — tính cách, sức khỏe, phúc đức</li>
+          <li>Sự nghiệp & công danh theo cung Quan Lộc</li>
+          <li>Tài lộc & tài sản theo cung Tài Bạch</li>
+          <li>Gia đạo & người thân</li>
+          <li>2 câu hỏi thêm theo lá số</li>
+        </ul>
+        <a href="#lap-la-so" class="price-btn">Chọn gói này</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-name">Cao cấp</div>
+        <div class="price-desc">Tử Vi + Bát Tự đối chiếu</div>
+        <div class="price-amount">
+          <span class="price-old">399.000đ</span>
+          <span class="price-new">279.000đ</span>
+        </div>
+        <div class="price-note">35+ trang báo cáo</div>
+        <ul class="price-list">
+          <li>Tất cả phần Gói Tiêu chuẩn</li>
+          <li>Bát Tự: Ngũ Hành, Dụng Thần, Kỵ Thần</li>
+          <li>Đại Vận 10 năm theo Bát Tự</li>
+          <li>Đối chiếu Tử Vi ↔ Bát Tự — điểm thống nhất và cảnh báo chéo</li>
+          <li>Phong thủy tổng hợp — hướng, màu, hành động nên làm</li>
+          <li>3 câu hỏi thêm theo lá số</li>
+        </ul>
+        <a href="#lap-la-so" class="price-btn">Chọn gói này</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="phan-hoi">
+  <div class="section-inner">
+    <div class="section-label">Người đã xem số</div>
+    <h2 class="section-title">Không phải lời khen —<br><em>là những gì thay đổi</em></h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">Tôi không tin tử vi cho đến khi thầy nói đúng một điều mà tôi chưa kể cho ai. Không phải ngẫu nhiên. Từ đó tôi bắt đầu nghe khác đi.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">T</div>
+          <div>
+            <div class="author-name">Trần Văn Minh</div>
+            <div class="author-meta">TP. Hồ Chí Minh — Gói Cao cấp</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">Phần sự nghiệp rất cụ thể — không nói kiểu "bạn hợp làm việc sáng tạo" chung chung. Nó chỉ rõ giai đoạn nào cần giữ, giai đoạn nào nên mạo hiểm. Tôi đã thay đổi công việc đúng thời điểm đó.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">P</div>
+          <div>
+            <div class="author-name">Phạm Đức Anh</div>
+            <div class="author-meta">Hải Phòng — Gói Cao cấp</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">Mua báo cáo cho cả gia đình. Phần gia đạo chính xác đến mức tôi hiểu tại sao một số xung đột trong nhà lại cứ lặp đi lặp lại. Biết rồi thì nhẹ hơn nhiều.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <div class="author-name">Lê Thị Hương</div>
+            <div class="author-meta">Đà Nẵng — Gói Tiêu chuẩn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-label">Hỏi & đáp</div>
+    <h2 class="section-title">Những điều<br><em>nên biết trước</em></h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Tử vi có định sẵn số phận không? <span class="faq-icon">+</span></div>
+        <p class="faq-a">Không. Tử vi mô tả khuynh hướng và chu kỳ vận — không phán quyết kết quả. Người hiểu lá số mình thường đưa ra quyết định tốt hơn, không phải vì số mệnh tốt hơn, mà vì họ chuẩn bị đúng chỗ.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Giờ sinh không chắc chắn thì có xem được không? <span class="faq-icon">+</span></div>
+        <p class="faq-a">Được, nhưng cần nói rõ. Giờ sinh ảnh hưởng trực tiếp đến cung Mệnh và cung Thân — hai cung quan trọng nhất. Nếu sai giờ khoảng 1–2 tiếng, lá số vẫn có giá trị tham chiếu ở nhiều cung còn lại.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Tôi xem miễn phí trước được không? <span class="faq-icon">+</span></div>
+        <p class="faq-a">Được. Lập lá số miễn phí để xem tổng quan trước. Chỉ khi bạn cần đi sâu hơn vào từng lĩnh vực cụ thể mới cần báo cáo chi tiết.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Báo cáo phù hợp với ai nhất? <span class="faq-icon">+</span></div>
+        <p class="faq-a">Người đang đứng trước quyết định quan trọng — đổi việc, lập gia đình, đầu tư, chuyển nhà. Và người muốn hiểu rõ hơn tại sao một số vấn đề cứ lặp lại trong cuộc sống của mình.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Thông tin cá nhân của tôi được dùng như thế nào? <span class="faq-icon">+</span></div>
+        <p class="faq-a">Ngày giờ sinh chỉ dùng để lập lá số. Không yêu cầu dữ liệu nhạy cảm. Không chia sẻ với bên thứ ba.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FORM -->
+<section class="cta-section" id="lap-la-so">
+  <div class="section-label">Bắt đầu</div>
+  <h2 class="section-title">Lá số của bạn<br>đang chờ được <em>đọc đúng</em></h2>
+  <p class="section-body">Miễn phí để bắt đầu. Không cần thanh toán để xem lá số tổng quan. Chỉ nâng cấp khi bạn thật sự cần đi sâu hơn.</p>
+
+  <div style="max-width: 480px; margin: 0 auto; background: white; border: 1px solid var(--border); padding: 2.5rem;">
+    <div style="display: grid; gap: 1.25rem;">
+      <div>
+        <label style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); display: block; margin-bottom: 6px;">Họ và tên</label>
+        <input type="text" placeholder="Nguyễn Văn A" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); background: var(--cream); font-size: 14px; font-family: var(--sans); color: var(--ink); outline: none;">
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div>
+          <label style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); display: block; margin-bottom: 6px;">Ngày sinh (dương lịch)</label>
+          <input type="text" placeholder="dd/mm/yyyy" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); background: var(--cream); font-size: 14px; font-family: var(--sans); color: var(--ink); outline: none;">
+        </div>
+        <div>
+          <label style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); display: block; margin-bottom: 6px;">Giờ sinh</label>
+          <select style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); background: var(--cream); font-size: 14px; font-family: var(--sans); color: var(--ink); outline: none; appearance: none;">
+            <option value="">Chọn giờ</option>
+            <option>Tý (23–01h)</option>
+            <option>Sửu (01–03h)</option>
+            <option>Dần (03–05h)</option>
+            <option>Mão (05–07h)</option>
+            <option>Thìn (07–09h)</option>
+            <option>Tỵ (09–11h)</option>
+            <option>Ngọ (11–13h)</option>
+            <option>Mùi (13–15h)</option>
+            <option>Thân (15–17h)</option>
+            <option>Dậu (17–19h)</option>
+            <option>Tuất (19–21h)</option>
+            <option>Hợi (21–23h)</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label style="font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); display: block; margin-bottom: 6px;">Giới tính</label>
+        <div style="display: flex; gap: 1rem;">
+          <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 14px; color: var(--ink-soft); cursor: pointer;"><input type="radio" name="gender"> Nam</label>
+          <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 14px; color: var(--ink-soft); cursor: pointer;"><input type="radio" name="gender"> Nữ</label>
+        </div>
+      </div>
+      <button style="width: 100%; padding: 1rem; background: var(--ink); color: var(--cream); border: none; font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; font-family: var(--sans); transition: background 0.2s;" onmouseover="this.style.background='#b8943f'" onmouseout="this.style.background='#1a1208'">Lập lá số miễn phí</button>
+    </div>
+  </div>
+  <p class="cta-note">Không cần thanh toán để xem lá số ban đầu. Thêm thông tin tùy chọn giúp luận giải sát hơn.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Tử Vi <span>Sao Mai</span></div>
+      <p class="footer-tagline">Lá số không thay bạn quyết định. Nó giúp bạn quyết định từ chỗ hiểu mình — không phải từ chỗ lo sợ.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Dịch vụ</div>
+      <ul class="footer-links">
+        <li><a href="#lap-la-so">Lập lá số miễn phí</a></li>
+        <li><a href="#bang-gia">Báo cáo chi tiết</a></li>
+        <li><a href="#what-you-get">Bạn nhận được gì</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Hỗ trợ</div>
+      <ul class="footer-links">
+        <li><a href="#faq">Câu hỏi thường gặp</a></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+        <li><a href="mailto:saomaithuvi@gmail.com">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Tử Vi Sao Mai. Bảo lưu mọi quyền.</span>
+    <span class="footer-disclaimer">Tử Vi là công cụ tham khảo và chiêm nghiệm — không thay thế tư vấn chuyên môn về y tế, pháp lý hay tài chính.</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', function() {
+    const item = this.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-icon').textContent = '+';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      this.querySelector('.faq-icon').textContent = '×';
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
